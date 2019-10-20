@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"github.com/PuerkitoBio/goquery"
 	"github.com/nlopes/slack"
 )
@@ -20,7 +19,6 @@ func GetPage(url string) {
 		shopName := s.Find(".shop-nm .name").Text()
 		text := url + "\n" + shopName
 
-		fmt.Println(text)
 		PostSlack(text, imageURL)
 	})
 }
