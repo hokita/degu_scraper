@@ -7,7 +7,7 @@ import (
 
 // settings of slack
 const (
-	WEBHOOKURL = "[my webhookurl]"
+	WEBHOOKURL = ""
 )
 
 // GetPage function
